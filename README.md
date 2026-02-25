@@ -1,16 +1,51 @@
-# widget_presentation
+# Reorderable ListView Flutter App
 
-A new Flutter project.
+A simple Flutter app that demonstrates the ReorderableListView widget, allowing users to drag and reorder numbers from lowest to highest.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## Features
+- Drag-and-drop list reordering
+- Interactive UI updates with setState()
+- Simple number sorting exercise
+- Clean and minimal UI
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## How to Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+### 1. Install Flutter
+flutter  3.41.0-0.2.pre
+
+### 2. Get dependencies
+flutter pub get
+
+### 3. Run the app
+flutter run
+
+---
+
+## Widget Description 
+
+ReorderableListView allows users to rearrange list items using drag-and-drop gestures.
+
+---
+
+## Three Important Attributes
+
+### children
+Contains the ListTile widgets displayed in the list.
+
+### key
+Each item must have a unique key so Flutter can correctly track movement during reordering.
+
+### onReorder
+Callback triggered when an item is moved; updates the list order using setState().
+
+---
+
+## Screenshot
+
+![Final UI Screenshot](assets/demo.png)
+
+
