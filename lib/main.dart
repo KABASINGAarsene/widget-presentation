@@ -31,11 +31,11 @@ class _ReorderableExampleState extends State<ReorderableExample> {
               title: Text(_items[index]),
             ),
         ],
-        onReorder: (int oldIndex, int newIndex) {
+        onReorder: (int oldIndex, int newindex) {
           setState(() {
-            if (oldIndex < newIndex) newIndex -= 1;
+            if (oldIndex < newindex) newindex -= 1;
             final String item = _items.removeAt(oldIndex);
-            _items.insert(newIndex, item);
+            _items.insert(newindex, item);
           });
         },
       ),
