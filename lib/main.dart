@@ -29,7 +29,6 @@ class _ReorderableExampleState extends State<ReorderableExample> {
             ListTile(
               key: Key('$index'), // Keys are required for reordering
               title: Text(_items[index]),
-              // trailing: const Icon(Icons.drag_handle),
             ),
         ],
         onReorder: (int oldIndex, int newIndex) {
